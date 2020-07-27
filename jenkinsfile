@@ -5,7 +5,7 @@ pipeline {
         }
         stages {
                 stage('SCM'){
-                        git branch: 'master', url: 'https://github.com/manfer993/Selenium-Technical-Test.git'
+                        git branch: 'master', url: 'https://github.com/manfer993/technical_test.git'
                 }
                 stage('Install Maven dependencies'){
                         sh "mvn dependency:resolve"
