@@ -1,0 +1,18 @@
+pipeline {
+        agent any
+        triggers {
+                cron('H 23 * * *')
+        }
+        stages {
+                stage('SCM'){
+                        git branch: 'master', url: 'https://github.com/manfer993/Selenium-Technical-Test.git'
+                }
+                stage('Install Maven dependencies'){
+                        sh "mvn dependency:resolve"
+                        sh "mvn dependency:resolve-plugins"
+                }
+                stage('Run Test'){
+                        sh "mvn clean install"
+                }
+        }
+}

@@ -1,0 +1,36 @@
+/bin
+/test-output
+/target
+
+### Builder
+target/
+build/
+out/
+gen/
+.gradle/
+local.properties
+
+### IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+### Eclipse
+.settings/
+.project
+.classpath
+.mymetadata
+
+### Maven
+.mvn/
+
+### Package Files
+*.jar
+*.war
+*.ear
+
+### Other
+.DS_Store
+*.log
+*.bak

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+
+	<test name="LogIn_LogOut_Test">
+		<parameter name="url" value="https://www.saucedemo.com/" />
+		<parameter name="standard_user" value="standard_user" />
+		<parameter name="locked_out_user" value="locked_out_user" />
+		<parameter name="problem_user" value="problem_user" />
+		<parameter name="performance_glitch_user" value="performance_glitch_user" />
+		<parameter name="password" value="secret_sauce" />
+		<classes>
+			<class name="tests.LogIn_Test" />
+		</classes>
+	</test>
+
+	<test name="E2E_Test">
+		<parameter name="url" value="https://www.saucedemo.com/" />
+		<parameter name="user_name" value="performance_glitch_user" />
+		<parameter name="password" value="secret_sauce" />
+		<parameter name="first_product" value="Sauce Labs Onesie" />
+		<parameter name="second_product" value="Sauce Labs Bike Light" />
+		<parameter name="fist_name" value="Manuel" />
+		<parameter name="last_name" value="Munoz" />
+		<parameter name="postal_code" value="11001000" />
+		<classes>
+			<class name="tests.E2E_Test" />
+		</classes>
+	</test>
+
+</suite>
