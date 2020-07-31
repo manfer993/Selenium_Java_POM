@@ -3,10 +3,10 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import utility.Base;
-import utility.Locators;
+import utils.BasePage;
+import utils.Locators;
 
-public class CheckoutCompletePage extends Base{
+public class CheckoutCompletePage extends BasePage{
 	
 	By titlePageLocator = By.className(Locators.pagetitle_div_class);
 	By responseTextLocator = By.className(Locators.shoppingresponse_text_class);

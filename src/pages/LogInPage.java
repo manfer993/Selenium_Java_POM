@@ -3,10 +3,10 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import utility.Base;
-import utility.Locators;
+import utils.BasePage;
+import utils.Locators;
 
-public class LogInPage extends Base {
+public class LogInPage extends BasePage {
 	By userNameLocator = By.id(Locators.username_textbox_id);
 	By passwordLocator = By.id(Locators.password_textbox_id);
 	By loginButtonLocator = By.id(Locators.login_button_id);

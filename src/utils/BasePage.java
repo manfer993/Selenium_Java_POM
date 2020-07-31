@@ -1,4 +1,4 @@
-package utility;
+package utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +12,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Base {
+public class BasePage {
 	private WebDriver driver;
 
-	public Base(WebDriver driver) {
+	public BasePage(WebDriver driver) {
 		this.driver = driver;
 	}
 	

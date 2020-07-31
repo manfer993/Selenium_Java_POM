@@ -3,10 +3,10 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import utility.Base;
-import utility.Locators;
+import utils.BasePage;
+import utils.Locators;
 
-public class CheckoutStepTwoPage extends Base{
+public class CheckoutStepTwoPage extends BasePage{
 	
 	By titlePageLocator = By.className(Locators.pagetitle_div_class);
 	By finishButtonLocator = By.xpath(Locators.finish_button_xpath);

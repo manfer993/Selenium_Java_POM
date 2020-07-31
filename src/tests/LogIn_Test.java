@@ -5,13 +5,13 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.HomePage;
 import pages.LogInPage;
-import utility.Base;
-import utility.Messages;
+import utils.BasePage;
+import utils.Messages;
 
 
 public class LogIn_Test {
 	private WebDriver driver;
-	private Base base;
+	private BasePage base;
 	private LogInPage logIn;
 	private HomePage home;
 	private String url = null;
@@ -37,7 +37,7 @@ public class LogIn_Test {
 		this.problem_user = problem_user;
 		this.performance_glitch_user = performance_glitch_user;
 		this.password = password;
-		base = new Base(driver);
+		base = new BasePage(driver);
 		driver = base.chromeDriverConnection();
 		base.setDriver(driver);
 		logIn = new LogInPage(base.getDriver());

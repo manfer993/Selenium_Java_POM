@@ -3,10 +3,10 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import utility.Base;
-import utility.Locators;
+import utils.BasePage;
+import utils.Locators;
 
-public class CheckoutStepOnePage extends Base{
+public class CheckoutStepOnePage extends BasePage{
 	
 	By titlePageLocator = By.className(Locators.pagetitle_div_class);
 	By firstNameLocator = By.id(Locators.firstname_textbox_id);

@@ -7,10 +7,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import utility.Base;
-import utility.Locators;
+import utils.BasePage;
+import utils.Locators;
 
-public class CartPage extends Base{
+public class CartPage extends BasePage{
 	
 	By titlePageLocator = By.className(Locators.pagetitle_div_class);
 	By checkOutButtonLocator = By.xpath(Locators.checkout_button_xpath);

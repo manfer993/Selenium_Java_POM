@@ -13,12 +13,12 @@ import pages.CheckoutStepOnePage;
 import pages.CheckoutStepTwoPage;
 import pages.HomePage;
 import pages.LogInPage;
-import utility.Base;
-import utility.Messages;
+import utils.BasePage;
+import utils.Messages;
 
 public class E2E_Test {
 	private WebDriver driver;
-	private Base base;
+	private BasePage base;
 	private LogInPage logIn;
 	private HomePage home;
 	private CartPage cart;
@@ -56,7 +56,7 @@ public class E2E_Test {
 		this.last_name = last_name;
 		this.postal_code = postal_code;
 		
-		base = new Base(driver);
+		base = new BasePage(driver);
 		driver = base.chromeDriverConnection();
 		base.setDriver(driver);
 		

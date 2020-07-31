@@ -6,10 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import utility.Base;
-import utility.Locators;
+import utils.BasePage;
+import utils.Locators;
 
-public class HomePage extends Base {
+public class HomePage extends BasePage {
 	By menuOpenLocator = By.xpath(Locators.menuopen_button_xpath);
 	By logoutButtonLocator = By.id(Locators.logout_button_id);
 	By loginButtonLocator = By.id(Locators.login_button_id);
